@@ -13,7 +13,6 @@ var async = require('async');
 var check = require('validator').check,
     sanitize = require('validator').sanitize;
 
-//var query = require('query');
 	
 /*
 id: String
@@ -38,7 +37,7 @@ app.get('/parkings', getParkings);
 
 function getParkings(req, res) {
     /* get query or para */
-	/*console.log('query',req.lag,req.lng,req.dis);*/
+	console.log('query',req.lag,req.lng,req.dis);
 	var lag = req.lag, lng = req.lng, dis = req.dis;
 	var data = [{'id':'English',
 	             'type':'outdoor',
@@ -62,7 +61,7 @@ app.get('/searchParkingByDistance', getSearchParkingByDistance);
 
 function getSearchParkingByDistance(req, res) {
     /*search parking by distance*/
-	/*console.log('query',req.lag,req.lng,req.dis);*/
+	console.log('query',req.lag,req.lng,req.dis);
 	var lag = req.lag, lng = req.lng, dis = req.dis;
 	var data = [{'id':'English',
 	             'type':'outdoor',
@@ -86,7 +85,7 @@ app.get('/searchParkingByLocation', getSearchParkingByLocation);
 
 function getSearchParkingByLocation(req, res) {
     /*search parking by location*/
-	/*console.log('query',req.lag,req.lng,req.dis);*/
+	console.log('query',req.lag,req.lng,req.dis);
 	var lag = req.lag, lng = req.lng, dis = req.dis;
 	var data = [{'id':'English',
 	             'type':'outdoor',
