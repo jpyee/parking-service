@@ -8,7 +8,7 @@ var crypto = require('crypto');
 var fs = require('fs');
 
 var moment = require('moment');
-require('colors');
+var colors = require('colors');
 var async = require('async');
 var check = require('validator').check,
     sanitize = require('validator').sanitize;
